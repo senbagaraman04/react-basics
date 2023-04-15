@@ -1,4 +1,7 @@
 import './App.css';
+import InputComponent from './hook'
+import  EventHandling from './EventHandling'
+ 
 
 function Header(){
   return <h1>hello world</h1>;
@@ -21,15 +24,21 @@ function App() {
         let userInput = prompt('type a number');
         alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
       }
-    
+
    return (
    <><Header /><Btn />
      <div>
       <h1>Task: Add a button and handle a click event</h1>
       <button onClick={handleClick}>Guess the number between 1 and 3</button>
     </div>
+
+
+<InputComponent/>
+<hr/>
+
+<EventHandling/>
    </>
    );
 }
 
-export default App;
+export default  App;
