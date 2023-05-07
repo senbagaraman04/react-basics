@@ -2,11 +2,13 @@ import './App.css';
 import InputComponent from './hook';
 import  EventHandling from './EventHandling';
 import Calc from './Calc';
+import Form from './Form';
+import FormInp from './FormInp';
 // import { Routes, Route, Link } from "react-router-dom";
 
 function Header(){
   return (
- <div>
+ <div>  
   {/* <nav>
   <Link to="/" className="nav-item">Homepage</Link>
   <Link to="/about" className="nav-item">About Little Lemon</Link>
@@ -58,7 +60,16 @@ function App() {
 
 
 <Calc />
+
+
+<Form />
+
+<hr/>
+
+<FormInp />
+
    </>
+  
    );
 }
 
